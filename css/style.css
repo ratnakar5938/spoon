@@ -1,0 +1,281 @@
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* CSS variables */
+
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+/* Navbar: logo and image styling */
+
+#logo {
+    height: 60px;
+    margin: 10px 10px;
+}
+
+#logo img {
+    height: 55px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+
+/* Navbar: list styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: aliceblue;
+    font-family: cursive;
+    display: block;
+    padding: 3px 30px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    /* background: url("../bg1.jpg") no-repeat center center/cover; */
+    background: url("../bg2.jpg") no-repeat center center/cover;
+    top: 0;
+    position: absolute;
+    height: 535px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.69;
+}
+
+#home h1 {
+    color: #560549;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: rgb(255, 255, 255);
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+/* Services section */
+
+#services {
+    display: flex;
+    margin: 34px;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #3ddfff4d;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    padding: 5px;
+    text-align: justify;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* client section */
+
+#client-section {
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url("../bg.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-items {
+    padding: 34px;
+}
+
+#clients img {
+    height: 120px;
+}
+
+
+/* contact section */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url("../contact.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.contact-box input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+.contact-box form {
+    width: 40%;
+}
+
+.contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Follow section */
+
+#follow {
+    position: relative;
+    background-color: black;
+}
+
+#followup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow-items {
+    padding: 34px;
+}
+
+#followup img {
+    height: 65px;
+    filter: invert(100);
+    cursor: pointer;
+}
+
+#follow h2 {
+    color: white;
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 9px 20px;
+}
+
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    color: whitesmoke;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 17px;
+    border-radius: 9px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
